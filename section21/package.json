@@ -1,0 +1,24 @@
+{
+  "name": "managerp",
+  "version": "1.0.0",
+  "description": "This is a projectmanagement tool ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "Backend",
+    "API",
+    "Database"
+  ],
+  "author": "chandan",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "3.6.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2"
+  }
+}
