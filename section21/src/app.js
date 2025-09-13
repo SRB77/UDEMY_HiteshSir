@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors')
-
+const healthCheckRouter = require('../src/routes/healthcheck.routes.js');
 const app = express();
 
 //> Basic configuration 
@@ -17,6 +17,9 @@ app.use(
     allowedHeaders:["Content-Type","Authorization"]
   }),
 );
+
+//>HealthcheckRouter config
+app.use('/api/v1/healthcheck',healthCheckRouter);
 
 
 app.get('/', (req, res) => {
